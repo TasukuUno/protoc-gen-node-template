@@ -1,0 +1,17 @@
+<%
+  var {
+    name,
+    valueList,
+  } = enumType;
+
+  // name = prefix ? prefix + '$' + name : name;
+  name = prefix + name;
+_%>
+<% if (!_.isEmpty(valueList)) { _%>
+enum <%- name %> {
+<% _.forEach(valueList, (value) => {_%>
+  <%-value.name %> = <%-value.number %>,
+<% });_%>
+}
+
+<% } _%>

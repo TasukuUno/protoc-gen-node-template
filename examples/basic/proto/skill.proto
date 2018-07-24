@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package basic;
+
+message SkillProto {
+  string name = 1;
+  int32 power = 2;
+  NestedProto nested = 3;
+  reserved 4, 8 to 10, 14;
+  reserved "foo", "bar";
+
+  message NestedProto {
+    string a = 1;
+    int64 b = 2;
+  }
+}

@@ -1,0 +1,12 @@
+<%
+  var { name, messageTypeList, enumTypeList } = proto;
+  var typeList = _.concat(messageTypeList, enumTypeList);
+_%>
+# <%- proto.name %>
+
+<% _.forEach(typeList, (type) => {_%>
+- <%- type.name%>
+<% _.forEach(type.fieldList || type.valueList, (field) => {_%>
+  <%- field.number%>. <%- field.name%>
+<% });_%>
+<% });_%>

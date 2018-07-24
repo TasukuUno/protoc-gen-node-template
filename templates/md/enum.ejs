@@ -1,0 +1,30 @@
+<%
+  var level = level + 1;
+  var {
+    name,
+    valueList,
+    reservedNameList,
+    reservedRangeList,
+  } = enumType;
+  var hash = new Array(level).fill('#').join('');
+  var reservedRange = _.map(reservedRangeList, ({ start, end }) => {
+    if ((end - start) === 1) {
+      return start;
+    } else {
+      return `${start} to ${end - 1}`;
+    }
+  }).join(', ');
+_%>
+<%-hash%> <%-name%>
+
+| name | number |
+| ---- | ---- |
+<% _.forEach(valueList, (value) => {_%>
+| <%-value.name%> | <%-value.number%> |
+<% });_%>
+<% _.forEach(reservedNameList, (name) => {_%>
+| <%-name%> | (reserved) |
+<% });_%>
+<% if (reservedRange) { _%>
+| (reserved) | <%-reservedRange %> |
+<% }_%>

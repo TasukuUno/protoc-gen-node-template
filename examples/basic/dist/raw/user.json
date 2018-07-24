@@ -1,0 +1,2454 @@
+{
+  "dependencies": [
+    {
+      "fileName": "skill.proto",
+      "typeNames": [
+        ".basic.SkillProto"
+      ]
+    }
+  ],
+  "proto": {
+    "name": "user.proto",
+    "pb_package": "basic",
+    "dependencyList": [
+      "skill.proto"
+    ],
+    "publicDependencyList": [],
+    "weakDependencyList": [],
+    "messageTypeList": [
+      {
+        "name": "UserProto",
+        "fieldList": [
+          {
+            "name": "id",
+            "number": 1,
+            "label": 1,
+            "type": 9,
+            "jsonName": "id"
+          },
+          {
+            "name": "name",
+            "number": 2,
+            "label": 1,
+            "type": 9,
+            "jsonName": "name"
+          },
+          {
+            "name": "gender",
+            "number": 3,
+            "label": 1,
+            "type": 14,
+            "typeName": ".basic.UserProto.Gender",
+            "jsonName": "gender"
+          },
+          {
+            "name": "level",
+            "number": 4,
+            "label": 1,
+            "type": 5,
+            "jsonName": "level"
+          },
+          {
+            "name": "updatedAt",
+            "number": 5,
+            "label": 1,
+            "type": 3,
+            "jsonName": "updatedAt"
+          },
+          {
+            "name": "isDeleted",
+            "number": 6,
+            "label": 1,
+            "type": 8,
+            "jsonName": "isDeleted"
+          },
+          {
+            "name": "skills",
+            "number": 7,
+            "label": 3,
+            "type": 11,
+            "typeName": ".basic.SkillProto",
+            "jsonName": "skills"
+          }
+        ],
+        "extensionList": [],
+        "nestedTypeList": [],
+        "enumTypeList": [
+          {
+            "name": "Gender",
+            "valueList": [
+              {
+                "name": "male",
+                "number": 0
+              },
+              {
+                "name": "female",
+                "number": 1
+              }
+            ],
+            "reservedRangeList": [],
+            "reservedNameList": []
+          }
+        ],
+        "extensionRangeList": [],
+        "oneofDeclList": [],
+        "reservedRangeList": [],
+        "reservedNameList": []
+      }
+    ],
+    "enumTypeList": [],
+    "serviceList": [],
+    "extensionList": [],
+    "sourceCodeInfo": {
+      "locationList": [
+        {
+          "pathList": [],
+          "spanList": [
+            0,
+            0,
+            19,
+            1
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            12
+          ],
+          "spanList": [
+            0,
+            0,
+            18
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            2
+          ],
+          "spanList": [
+            2,
+            8,
+            13
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            3,
+            0
+          ],
+          "spanList": [
+            4,
+            7,
+            20
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0
+          ],
+          "spanList": [
+            6,
+            0,
+            19,
+            1
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            1
+          ],
+          "spanList": [
+            6,
+            8,
+            17
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            0
+          ],
+          "spanList": [
+            7,
+            2,
+            16
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            0,
+            4
+          ],
+          "spanList": [
+            7,
+            2,
+            6,
+            19
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            0,
+            5
+          ],
+          "spanList": [
+            7,
+            2,
+            8
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            0,
+            1
+          ],
+          "spanList": [
+            7,
+            9,
+            11
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            0,
+            3
+          ],
+          "spanList": [
+            7,
+            14,
+            15
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            1
+          ],
+          "spanList": [
+            8,
+            2,
+            18
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            1,
+            4
+          ],
+          "spanList": [
+            8,
+            2,
+            7,
+            16
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            1,
+            5
+          ],
+          "spanList": [
+            8,
+            2,
+            8
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            1,
+            1
+          ],
+          "spanList": [
+            8,
+            9,
+            13
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            1,
+            3
+          ],
+          "spanList": [
+            8,
+            16,
+            17
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            2
+          ],
+          "spanList": [
+            9,
+            2,
+            20
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            2,
+            4
+          ],
+          "spanList": [
+            9,
+            2,
+            8,
+            18
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            2,
+            6
+          ],
+          "spanList": [
+            9,
+            2,
+            8
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            2,
+            1
+          ],
+          "spanList": [
+            9,
+            9,
+            15
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            2,
+            3
+          ],
+          "spanList": [
+            9,
+            18,
+            19
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            3
+          ],
+          "spanList": [
+            10,
+            2,
+            18
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            3,
+            4
+          ],
+          "spanList": [
+            10,
+            2,
+            9,
+            20
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            3,
+            5
+          ],
+          "spanList": [
+            10,
+            2,
+            7
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            3,
+            1
+          ],
+          "spanList": [
+            10,
+            8,
+            13
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            3,
+            3
+          ],
+          "spanList": [
+            10,
+            16,
+            17
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            4
+          ],
+          "spanList": [
+            11,
+            2,
+            22
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            4,
+            4
+          ],
+          "spanList": [
+            11,
+            2,
+            10,
+            18
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            4,
+            5
+          ],
+          "spanList": [
+            11,
+            2,
+            7
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            4,
+            1
+          ],
+          "spanList": [
+            11,
+            8,
+            17
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            4,
+            3
+          ],
+          "spanList": [
+            11,
+            20,
+            21
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            5
+          ],
+          "spanList": [
+            12,
+            2,
+            21
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            5,
+            4
+          ],
+          "spanList": [
+            12,
+            2,
+            11,
+            22
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            5,
+            5
+          ],
+          "spanList": [
+            12,
+            2,
+            6
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            5,
+            1
+          ],
+          "spanList": [
+            12,
+            7,
+            16
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            5,
+            3
+          ],
+          "spanList": [
+            12,
+            19,
+            20
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            6
+          ],
+          "spanList": [
+            13,
+            2,
+            33
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            6,
+            4
+          ],
+          "spanList": [
+            13,
+            2,
+            10
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            6,
+            6
+          ],
+          "spanList": [
+            13,
+            11,
+            21
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            6,
+            1
+          ],
+          "spanList": [
+            13,
+            22,
+            28
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            2,
+            6,
+            3
+          ],
+          "spanList": [
+            13,
+            31,
+            32
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "spanList": [
+            15,
+            2,
+            18,
+            3
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            4,
+            0,
+            1
+          ],
+          "spanList": [
+            15,
+            7,
+            13
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            4,
+            0,
+            2,
+            0
+          ],
+          "spanList": [
+            16,
+            4,
+            13
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            4,
+            0,
+            2,
+            0,
+            1
+          ],
+          "spanList": [
+            16,
+            4,
+            8
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            4,
+            0,
+            2,
+            0,
+            2
+          ],
+          "spanList": [
+            16,
+            11,
+            12
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            4,
+            0,
+            2,
+            1
+          ],
+          "spanList": [
+            17,
+            4,
+            15
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            4,
+            0,
+            2,
+            1,
+            1
+          ],
+          "spanList": [
+            17,
+            4,
+            10
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            0,
+            4,
+            0,
+            2,
+            1,
+            2
+          ],
+          "spanList": [
+            17,
+            13,
+            14
+          ],
+          "leadingDetachedCommentsList": []
+        }
+      ]
+    },
+    "syntax": "proto3"
+  },
+  "protos": [
+    {
+      "name": "skill.proto",
+      "pb_package": "basic",
+      "dependencyList": [],
+      "publicDependencyList": [],
+      "weakDependencyList": [],
+      "messageTypeList": [
+        {
+          "name": "SkillProto",
+          "fieldList": [
+            {
+              "name": "name",
+              "number": 1,
+              "label": 1,
+              "type": 9,
+              "jsonName": "name"
+            },
+            {
+              "name": "power",
+              "number": 2,
+              "label": 1,
+              "type": 5,
+              "jsonName": "power"
+            },
+            {
+              "name": "nested",
+              "number": 3,
+              "label": 1,
+              "type": 11,
+              "typeName": ".basic.SkillProto.NestedProto",
+              "jsonName": "nested"
+            }
+          ],
+          "extensionList": [],
+          "nestedTypeList": [
+            {
+              "name": "NestedProto",
+              "fieldList": [
+                {
+                  "name": "a",
+                  "number": 1,
+                  "label": 1,
+                  "type": 9,
+                  "jsonName": "a"
+                },
+                {
+                  "name": "b",
+                  "number": 2,
+                  "label": 1,
+                  "type": 3,
+                  "jsonName": "b"
+                }
+              ],
+              "extensionList": [],
+              "nestedTypeList": [],
+              "enumTypeList": [],
+              "extensionRangeList": [],
+              "oneofDeclList": [],
+              "reservedRangeList": [],
+              "reservedNameList": []
+            }
+          ],
+          "enumTypeList": [],
+          "extensionRangeList": [],
+          "oneofDeclList": [],
+          "reservedRangeList": [
+            {
+              "start": 4,
+              "end": 5
+            },
+            {
+              "start": 8,
+              "end": 11
+            },
+            {
+              "start": 14,
+              "end": 15
+            }
+          ],
+          "reservedNameList": [
+            "foo",
+            "bar"
+          ]
+        }
+      ],
+      "enumTypeList": [],
+      "serviceList": [],
+      "extensionList": [],
+      "sourceCodeInfo": {
+        "locationList": [
+          {
+            "pathList": [],
+            "spanList": [
+              0,
+              0,
+              15,
+              1
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              12
+            ],
+            "spanList": [
+              0,
+              0,
+              18
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              2
+            ],
+            "spanList": [
+              2,
+              8,
+              13
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0
+            ],
+            "spanList": [
+              4,
+              0,
+              15,
+              1
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              1
+            ],
+            "spanList": [
+              4,
+              8,
+              18
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              0
+            ],
+            "spanList": [
+              5,
+              2,
+              18
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              0,
+              4
+            ],
+            "spanList": [
+              5,
+              2,
+              4,
+              20
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              0,
+              5
+            ],
+            "spanList": [
+              5,
+              2,
+              8
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              0,
+              1
+            ],
+            "spanList": [
+              5,
+              9,
+              13
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              0,
+              3
+            ],
+            "spanList": [
+              5,
+              16,
+              17
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              1
+            ],
+            "spanList": [
+              6,
+              2,
+              18
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              1,
+              4
+            ],
+            "spanList": [
+              6,
+              2,
+              5,
+              18
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              1,
+              5
+            ],
+            "spanList": [
+              6,
+              2,
+              7
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              1,
+              1
+            ],
+            "spanList": [
+              6,
+              8,
+              13
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              1,
+              3
+            ],
+            "spanList": [
+              6,
+              16,
+              17
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              2
+            ],
+            "spanList": [
+              7,
+              2,
+              25
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              2,
+              4
+            ],
+            "spanList": [
+              7,
+              2,
+              6,
+              18
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              2,
+              6
+            ],
+            "spanList": [
+              7,
+              2,
+              13
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              2,
+              1
+            ],
+            "spanList": [
+              7,
+              14,
+              20
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              2,
+              3
+            ],
+            "spanList": [
+              7,
+              23,
+              24
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              9
+            ],
+            "spanList": [
+              8,
+              11,
+              26
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              9,
+              0
+            ],
+            "spanList": [
+              8,
+              11,
+              12
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              9,
+              0,
+              1
+            ],
+            "spanList": [
+              8,
+              11,
+              12
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              9,
+              0,
+              2
+            ],
+            "spanList": [
+              8,
+              11,
+              12
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              9,
+              1
+            ],
+            "spanList": [
+              8,
+              14,
+              21
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              9,
+              1,
+              1
+            ],
+            "spanList": [
+              8,
+              14,
+              15
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              9,
+              1,
+              2
+            ],
+            "spanList": [
+              8,
+              19,
+              21
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              9,
+              2
+            ],
+            "spanList": [
+              8,
+              23,
+              25
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              9,
+              2,
+              1
+            ],
+            "spanList": [
+              8,
+              23,
+              25
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              9,
+              2,
+              2
+            ],
+            "spanList": [
+              8,
+              23,
+              25
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              10
+            ],
+            "spanList": [
+              9,
+              11,
+              24
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              10,
+              0
+            ],
+            "spanList": [
+              9,
+              11,
+              16
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              10,
+              1
+            ],
+            "spanList": [
+              9,
+              18,
+              23
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              3,
+              0
+            ],
+            "spanList": [
+              11,
+              2,
+              14,
+              3
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              3,
+              0,
+              1
+            ],
+            "spanList": [
+              11,
+              10,
+              21
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              3,
+              0,
+              2,
+              0
+            ],
+            "spanList": [
+              12,
+              4,
+              17
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              3,
+              0,
+              2,
+              0,
+              4
+            ],
+            "spanList": [
+              12,
+              4,
+              11,
+              23
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              3,
+              0,
+              2,
+              0,
+              5
+            ],
+            "spanList": [
+              12,
+              4,
+              10
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              3,
+              0,
+              2,
+              0,
+              1
+            ],
+            "spanList": [
+              12,
+              11,
+              12
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              3,
+              0,
+              2,
+              0,
+              3
+            ],
+            "spanList": [
+              12,
+              15,
+              16
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              3,
+              0,
+              2,
+              1
+            ],
+            "spanList": [
+              13,
+              4,
+              16
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              3,
+              0,
+              2,
+              1,
+              4
+            ],
+            "spanList": [
+              13,
+              4,
+              12,
+              17
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              3,
+              0,
+              2,
+              1,
+              5
+            ],
+            "spanList": [
+              13,
+              4,
+              9
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              3,
+              0,
+              2,
+              1,
+              1
+            ],
+            "spanList": [
+              13,
+              10,
+              11
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              3,
+              0,
+              2,
+              1,
+              3
+            ],
+            "spanList": [
+              13,
+              14,
+              15
+            ],
+            "leadingDetachedCommentsList": []
+          }
+        ]
+      },
+      "syntax": "proto3"
+    },
+    {
+      "name": "user.proto",
+      "pb_package": "basic",
+      "dependencyList": [
+        "skill.proto"
+      ],
+      "publicDependencyList": [],
+      "weakDependencyList": [],
+      "messageTypeList": [
+        {
+          "name": "UserProto",
+          "fieldList": [
+            {
+              "name": "id",
+              "number": 1,
+              "label": 1,
+              "type": 9,
+              "jsonName": "id"
+            },
+            {
+              "name": "name",
+              "number": 2,
+              "label": 1,
+              "type": 9,
+              "jsonName": "name"
+            },
+            {
+              "name": "gender",
+              "number": 3,
+              "label": 1,
+              "type": 14,
+              "typeName": ".basic.UserProto.Gender",
+              "jsonName": "gender"
+            },
+            {
+              "name": "level",
+              "number": 4,
+              "label": 1,
+              "type": 5,
+              "jsonName": "level"
+            },
+            {
+              "name": "updatedAt",
+              "number": 5,
+              "label": 1,
+              "type": 3,
+              "jsonName": "updatedAt"
+            },
+            {
+              "name": "isDeleted",
+              "number": 6,
+              "label": 1,
+              "type": 8,
+              "jsonName": "isDeleted"
+            },
+            {
+              "name": "skills",
+              "number": 7,
+              "label": 3,
+              "type": 11,
+              "typeName": ".basic.SkillProto",
+              "jsonName": "skills"
+            }
+          ],
+          "extensionList": [],
+          "nestedTypeList": [],
+          "enumTypeList": [
+            {
+              "name": "Gender",
+              "valueList": [
+                {
+                  "name": "male",
+                  "number": 0
+                },
+                {
+                  "name": "female",
+                  "number": 1
+                }
+              ],
+              "reservedRangeList": [],
+              "reservedNameList": []
+            }
+          ],
+          "extensionRangeList": [],
+          "oneofDeclList": [],
+          "reservedRangeList": [],
+          "reservedNameList": []
+        }
+      ],
+      "enumTypeList": [],
+      "serviceList": [],
+      "extensionList": [],
+      "sourceCodeInfo": {
+        "locationList": [
+          {
+            "pathList": [],
+            "spanList": [
+              0,
+              0,
+              19,
+              1
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              12
+            ],
+            "spanList": [
+              0,
+              0,
+              18
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              2
+            ],
+            "spanList": [
+              2,
+              8,
+              13
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              3,
+              0
+            ],
+            "spanList": [
+              4,
+              7,
+              20
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0
+            ],
+            "spanList": [
+              6,
+              0,
+              19,
+              1
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              1
+            ],
+            "spanList": [
+              6,
+              8,
+              17
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              0
+            ],
+            "spanList": [
+              7,
+              2,
+              16
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              0,
+              4
+            ],
+            "spanList": [
+              7,
+              2,
+              6,
+              19
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              0,
+              5
+            ],
+            "spanList": [
+              7,
+              2,
+              8
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              0,
+              1
+            ],
+            "spanList": [
+              7,
+              9,
+              11
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              0,
+              3
+            ],
+            "spanList": [
+              7,
+              14,
+              15
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              1
+            ],
+            "spanList": [
+              8,
+              2,
+              18
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              1,
+              4
+            ],
+            "spanList": [
+              8,
+              2,
+              7,
+              16
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              1,
+              5
+            ],
+            "spanList": [
+              8,
+              2,
+              8
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              1,
+              1
+            ],
+            "spanList": [
+              8,
+              9,
+              13
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              1,
+              3
+            ],
+            "spanList": [
+              8,
+              16,
+              17
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              2
+            ],
+            "spanList": [
+              9,
+              2,
+              20
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              2,
+              4
+            ],
+            "spanList": [
+              9,
+              2,
+              8,
+              18
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              2,
+              6
+            ],
+            "spanList": [
+              9,
+              2,
+              8
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              2,
+              1
+            ],
+            "spanList": [
+              9,
+              9,
+              15
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              2,
+              3
+            ],
+            "spanList": [
+              9,
+              18,
+              19
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              3
+            ],
+            "spanList": [
+              10,
+              2,
+              18
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              3,
+              4
+            ],
+            "spanList": [
+              10,
+              2,
+              9,
+              20
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              3,
+              5
+            ],
+            "spanList": [
+              10,
+              2,
+              7
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              3,
+              1
+            ],
+            "spanList": [
+              10,
+              8,
+              13
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              3,
+              3
+            ],
+            "spanList": [
+              10,
+              16,
+              17
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              4
+            ],
+            "spanList": [
+              11,
+              2,
+              22
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              4,
+              4
+            ],
+            "spanList": [
+              11,
+              2,
+              10,
+              18
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              4,
+              5
+            ],
+            "spanList": [
+              11,
+              2,
+              7
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              4,
+              1
+            ],
+            "spanList": [
+              11,
+              8,
+              17
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              4,
+              3
+            ],
+            "spanList": [
+              11,
+              20,
+              21
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              5
+            ],
+            "spanList": [
+              12,
+              2,
+              21
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              5,
+              4
+            ],
+            "spanList": [
+              12,
+              2,
+              11,
+              22
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              5,
+              5
+            ],
+            "spanList": [
+              12,
+              2,
+              6
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              5,
+              1
+            ],
+            "spanList": [
+              12,
+              7,
+              16
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              5,
+              3
+            ],
+            "spanList": [
+              12,
+              19,
+              20
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              6
+            ],
+            "spanList": [
+              13,
+              2,
+              33
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              6,
+              4
+            ],
+            "spanList": [
+              13,
+              2,
+              10
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              6,
+              6
+            ],
+            "spanList": [
+              13,
+              11,
+              21
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              6,
+              1
+            ],
+            "spanList": [
+              13,
+              22,
+              28
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              2,
+              6,
+              3
+            ],
+            "spanList": [
+              13,
+              31,
+              32
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              4,
+              0
+            ],
+            "spanList": [
+              15,
+              2,
+              18,
+              3
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              4,
+              0,
+              1
+            ],
+            "spanList": [
+              15,
+              7,
+              13
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              4,
+              0,
+              2,
+              0
+            ],
+            "spanList": [
+              16,
+              4,
+              13
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              4,
+              0,
+              2,
+              0,
+              1
+            ],
+            "spanList": [
+              16,
+              4,
+              8
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              4,
+              0,
+              2,
+              0,
+              2
+            ],
+            "spanList": [
+              16,
+              11,
+              12
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              4,
+              0,
+              2,
+              1
+            ],
+            "spanList": [
+              17,
+              4,
+              15
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              4,
+              0,
+              2,
+              1,
+              1
+            ],
+            "spanList": [
+              17,
+              4,
+              10
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              4,
+              0,
+              2,
+              1,
+              2
+            ],
+            "spanList": [
+              17,
+              13,
+              14
+            ],
+            "leadingDetachedCommentsList": []
+          }
+        ]
+      },
+      "syntax": "proto3"
+    }
+  ],
+  "parameter": {
+    "template": "/Users/a11810/git/protoc-gen-node-template/templates/raw/index.ejs",
+    "ext": "json"
+  },
+  "compilerVersion": {
+    "major": 3,
+    "minor": 6,
+    "patch": 0,
+    "suffix": ""
+  },
+  "TYPE": {
+    "1": "double",
+    "2": "float",
+    "3": "int64",
+    "4": "uint64",
+    "5": "int32",
+    "6": "fixed64",
+    "7": "fixed32",
+    "8": "bool",
+    "9": "string",
+    "10": "group",
+    "11": "message",
+    "12": "bytes",
+    "13": "uint32",
+    "14": "enum",
+    "15": "sfixed32",
+    "16": "sfixed64",
+    "17": "sint32",
+    "18": "sint64"
+  },
+  "LABEL": {
+    "1": "optional",
+    "2": "required",
+    "3": "repeated"
+  }
+}

@@ -1,0 +1,12 @@
+<%
+  var { name, messageTypeList, enumTypeList } = proto;
+_%>
+<% _.forEach(dependencies, (dependency) => { _%>
+<%- include('/dependency', dependency) _%>
+<% })_%>
+<% _.forEach(messageTypeList, (message) => { _%>
+<%- include('/message', { message, prefix: '' }) _%>
+<% }); _%>
+<% _.forEach(enumTypeList, (enumType) => { _%>
+<%- include('/enum', { enumType, prefix: '' }) _%>
+<% }); _%>

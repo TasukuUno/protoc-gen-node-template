@@ -1,0 +1,37 @@
+<%
+  var TS_TYPE = {
+    double: 'number',
+    float: 'number',
+    int64: 'number',
+    uint64: 'number',
+    int32: 'number',
+    fixed64: 'number',
+    fixed32: 'number',
+    bool: 'boolean',
+    string: 'string',
+    group: 'group', // FIXME
+    message: 'message', // will be replaced with other interface name
+    bytes: 'string',
+    uint32: 'number',
+    enum: 'enum', // will be replaced with enum name
+    sfixed32: 'number',
+    sfixed64: 'number',
+    sint32: 'number',
+    sint64: 'number',
+  };
+  var { label, name, jsonName, typeName, type, number, oneofIndex } = field;
+  if (typeName) {
+    type = typeName.replace(protoPrefix, '').split('.').join('');
+  } else {
+    type = TS_TYPE[TYPE[type]];
+  }
+
+  if (LABEL[label] === 'repeated') {
+    type += '[]';
+  }
+
+  // if (LABEL[label] !== 'required') {
+  //   type += ' | null';
+  // }
+_%>
+<%-jsonName || name%>: <%-type%>;

@@ -1,0 +1,9 @@
+<%
+  var { label, name, typeName, type, number, oneofIndex } = field;
+  label = LABEL[label];
+  if (typeof oneofIndex === 'number') {
+    label = `oneof (${oneofDeclList[oneofIndex].name})`
+  }
+  type = typeName ? typeName.split('.').pop() : TYPE[type];
+_%>
+| <%-label%> | <%-name%> | <%-type%> | <%-number%> |

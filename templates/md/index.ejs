@@ -1,0 +1,12 @@
+<%
+  var level = 1;
+  var { name, messageTypeList, enumTypeList } = proto;
+_%>
+# <%-name%>
+
+<% _.forEach(messageTypeList, (message) => { _%>
+<%- include('/message', { message, level: 1 }) _%>
+<% }); _%>
+<% _.forEach(enumTypeList, (enumType) => { _%>
+<%- include('/enum', { enumType, level: 1 }) _%>
+<% }); _%>

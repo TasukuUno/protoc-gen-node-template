@@ -1,0 +1,8 @@
+<% if (!_.isEmpty(typeNames)) { _%>
+import {
+<% _.forEach(typeNames, (typeName) => {_%>
+  <%-typeName.split('.').pop() %>,
+<% });_%>
+} from './<%-fileName.replace(/\.proto$/, "") %>';
+
+<% } _%>

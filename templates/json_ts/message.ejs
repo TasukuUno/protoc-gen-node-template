@@ -1,0 +1,35 @@
+<%
+  var {
+    name,
+    fieldList,
+    reservedNameList,
+    reservedRangeList,
+    enumTypeList,
+    nestedTypeList,
+    oneofDeclList,
+  } = message;
+
+  // name = prefix ? prefix + '$' + name : name;
+  name = prefix + name;
+
+  var protoPrefix = '.' + proto.pb_package;
+  var exp = prefix ? '' : 'export ';
+_%>
+<% if (!_.isEmpty(fieldList)) { _%>
+<%- exp %>interface <%- name %> {
+<% _.forEach(fieldList, (field) => {_%>
+  <%-include('/field', { field, protoPrefix }) _%>
+<% });_%>
+}
+
+<% } _%>
+<% if (!_.isEmpty(enumTypeList)) { _%>
+<% _.forEach(enumTypeList, (enumType) => {_%>
+<%- include('/enum', { enumType, prefix: name }) _%>
+<% });_%>
+<% }_%>
+<% if (!_.isEmpty(nestedTypeList)) { _%>
+<% _.forEach(nestedTypeList, (nestedType) => {_%>
+<%- include('/message', { message: nestedType, prefix: name }) _%>
+<% });_%>
+<% }_%>

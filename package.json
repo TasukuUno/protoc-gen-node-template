@@ -1,0 +1,40 @@
+{
+  "name": "protoc-gen-node-template",
+  "version": "0.0.1",
+  "description": "Protoc plugin to generate files by your own templates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "protoc-gen-node-template": "./bin/protoc-gen-node-template"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TasukuUno/protoc-gen-node-template.git"
+  },
+  "keywords": [
+    "protoc",
+    "json",
+    "Markdown",
+    "ejs",
+    "TypeScript",
+    "ts"
+  ],
+  "author": "TasukuUno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TasukuUno/protoc-gen-node-template/issues"
+  },
+  "homepage": "https://github.com/TasukuUno/protoc-gen-node-template#readme",
+  "dependencies": {
+    "ejs": "2.6.1",
+    "google-protobuf": "3.6.0",
+    "lodash": "4.17.10",
+    "protoc-plugin": "0.0.6"
+  },
+  "devDependencies": {
+    "eslint": "4.x",
+    "eslint-config-google": "0.x"
+  }
+}

@@ -1,0 +1,47 @@
+<%
+  var level = level + 1;
+  var {
+    name,
+    fieldList,
+    reservedNameList,
+    reservedRangeList,
+    enumTypeList,
+    nestedTypeList,
+    oneofDeclList,
+  } = message;
+  var hash = new Array(level).fill('#').join('');
+  var reservedRange = _.map(reservedRangeList, ({ start, end }) => {
+    if ((end - start) === 1) {
+      return start;
+    } else {
+      return `${start} to ${end - 1}`;
+    }
+  }).join(', ');
+_%>
+<%-hash%> <%-name%>
+
+<% if (!_.isEmpty(fieldList)) { _%>
+| label | name | type | number |
+| ----- | ---- | ---- | ------ |
+<% _.forEach(fieldList, (field) => {_%>
+<%-  include('/field', { field, oneofDeclList }) _%>
+<% });_%>
+<% _.forEach(reservedNameList, (name) => {_%>
+| reserved | <%-name%> | | |
+<% });_%>
+<% if (reservedRange) { _%>
+| reserved | | | <%-reservedRange %> |
+<% }_%>
+<% }_%>
+
+<% if (!_.isEmpty(enumTypeList)) { _%>
+<% _.forEach(enumTypeList, (enumType) => {_%>
+<%- include('/enum', { enumType, level }) _%>
+<% });_%>
+<% }_%>
+
+<% if (!_.isEmpty(nestedTypeList)) { _%>
+<% _.forEach(nestedTypeList, (nestedType) => {_%>
+<%- include('/message', { message: nestedType, level }) _%>
+<% });_%>
+<% }_%>

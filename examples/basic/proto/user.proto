@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package basic;
+
+import "skill.proto";
+
+message UserProto {
+  string id = 1;
+  string name = 2;
+  Gender gender = 3;
+  int32 level = 4;
+  int64 updatedAt = 5;
+  bool isDeleted = 6;
+  repeated SkillProto skills = 7;
+  
+  enum Gender {
+    male = 0;
+    female = 1;
+  }
+}
+
