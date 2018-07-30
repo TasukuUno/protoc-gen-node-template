@@ -3,13 +3,13 @@ import {
 } from './skill';
 
 export interface UserProto {
-  id: string;
-  name: string;
-  gender: UserProtoGender;
-  level: number;
-  updatedAt: number;
-  isDeleted: boolean;
-  skills: SkillProto[];
+  id?: string;
+  name?: string;
+  gender?: UserProtoGender;
+  level?: number;
+  updatedAt?: number;
+  isDeleted?: boolean;
+  skills?: SkillProto[];
 }
 
 enum UserProtoGender {

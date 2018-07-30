@@ -1,5 +1,7 @@
 # skill.proto
 
+HELLO
+
 - SkillProto
   1. name
   2. power

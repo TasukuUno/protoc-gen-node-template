@@ -19,7 +19,8 @@
     sint32: 'number',
     sint64: 'number',
   };
-  var { label, name, jsonName, typeName, type, number, oneofIndex } = field;
+  var { label, typeName, type, number, oneofIndex } = field;
+  var name = field.jsonName || field.name;
   if (typeName) {
     type = typeName.replace(protoPrefix, '').split('.').join('');
   } else {
@@ -30,8 +31,8 @@
     type += '[]';
   }
 
-  // if (LABEL[label] !== 'required') {
-  //   type += ' | null';
-  // }
+  if (parameter.useOptional && LABEL[label] !== 'required') {
+    name += '?';
+  }
 _%>
-<%-jsonName || name%>: <%-type%>;
+<%-name%>: <%-type%>;

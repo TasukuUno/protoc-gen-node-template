@@ -2351,6 +2351,7 @@
     }
   ],
   "parameter": {
+    "yourAnyParam": "abc",
     "template": "/Users/a11810/git/protoc-gen-node-template/templates/raw/index.ejs",
     "ext": "json"
   },
