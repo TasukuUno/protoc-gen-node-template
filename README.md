@@ -18,7 +18,7 @@ Then you should have the plugin executable in `./node_modules/.bin` .
 ### *.proto => *.md
 
 ```
-protoc --plugin=protoc-gen-node-template=./node_modules/bin/protoc-gen-node-template \
+protoc --plugin=protoc-gen-node-template=./node_modules/.bin/protoc-gen-node-template \
   --node-template_out=template=md:./PATH/TO/OUT \
   -I ./PATH/TO/PROTO/DIR ./PATH/TO/PROTO/DIR/*.proto
 ```
@@ -29,7 +29,7 @@ protoc --plugin=protoc-gen-node-template=./node_modules/bin/protoc-gen-node-temp
 ### *.proto => *.ts interfaces for JSON communication
 
 ```
-protoc --plugin=protoc-gen-node-template=./node_modules/bin/protoc-gen-node-template \
+protoc --plugin=protoc-gen-node-template=./node_modules/.bin/protoc-gen-node-template \
   --node-template_out=template=json_ts:./PATH/TO/OUT \
   -I ./PATH/TO/PROTO/DIR ./PATH/TO/PROTO/DIR/*.proto
 ```
@@ -42,7 +42,7 @@ You can write your own templates in [ejs](https://www.npmjs.com/package/ejs) whi
 I recommend to do this because what you define with the proto file depends on each project.
 
 ```
-protoc --plugin=protoc-gen-node-template=./node_modules/bin/protoc-gen-node-template \
+protoc --plugin=protoc-gen-node-template=./node_modules/.bin/protoc-gen-node-template \
   --node-template_out=template=./PATH/TO/template.ejs,ext=md:./PATH/TO/OUT \
   -I ./PATH/TO/PROTO/DIR ./PATH/TO/PROTO/DIR/*.proto
 ```
@@ -54,7 +54,7 @@ protoc --plugin=protoc-gen-node-template=./node_modules/bin/protoc-gen-node-temp
 - You can learn more about what variables can be accessed in the template with the `raw` default template below.
 
 ```
-protoc --plugin=protoc-gen-node-template=./node_modules/bin/protoc-gen-node-template \
+protoc --plugin=protoc-gen-node-template=./node_modules/.bin/protoc-gen-node-template \
   --node-template_out=template=raw,yourAnyParam=abc:./PATH/TO/OUT \
   -I ./PATH/TO/PROTO/DIR ./PATH/TO/PROTO/DIR/*.proto
 ```
