@@ -1,4 +1,6 @@
-./examples
+README.md
+examples
+.private
 .eslintignore
 .eslintrc.js
 .gitignore
