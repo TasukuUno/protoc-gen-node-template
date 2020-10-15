@@ -28,13 +28,13 @@
   },
   "homepage": "https://github.com/TasukuUno/protoc-gen-node-template#readme",
   "dependencies": {
-    "ejs": "2.6.1",
-    "google-protobuf": "3.6.0",
-    "lodash": "4.17.10",
+    "ejs": "3.1.5",
+    "google-protobuf": "3.13.0",
+    "lodash": "4.17.20",
     "protoc-plugin": "0.0.6"
   },
   "devDependencies": {
-    "eslint": "4.x",
+    "eslint": "7.x",
     "eslint-config-google": "0.x"
   }
 }
