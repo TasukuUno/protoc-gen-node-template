@@ -94,6 +94,34 @@
         "oneofDeclList": [],
         "reservedRangeList": [],
         "reservedNameList": []
+      },
+      {
+        "name": "ExternalNestedUserProto",
+        "fieldList": [
+          {
+            "name": "nestedMsg",
+            "number": 1,
+            "label": 1,
+            "type": 11,
+            "typeName": ".basic.SkillProto.NestedProto",
+            "jsonName": "nestedMsg"
+          },
+          {
+            "name": "nestedEnum",
+            "number": 2,
+            "label": 1,
+            "type": 14,
+            "typeName": ".basic.SkillProto.NestedEnum",
+            "jsonName": "nestedEnum"
+          }
+        ],
+        "extensionList": [],
+        "nestedTypeList": [],
+        "enumTypeList": [],
+        "extensionRangeList": [],
+        "oneofDeclList": [],
+        "reservedRangeList": [],
+        "reservedNameList": []
       }
     ],
     "enumTypeList": [],
@@ -106,7 +134,7 @@
           "spanList": [
             0,
             0,
-            19,
+            24,
             1
           ],
           "leadingDetachedCommentsList": []
@@ -728,6 +756,150 @@
             14
           ],
           "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            1
+          ],
+          "spanList": [
+            21,
+            0,
+            24,
+            1
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            1,
+            1
+          ],
+          "spanList": [
+            21,
+            8,
+            31
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            1,
+            2,
+            0
+          ],
+          "spanList": [
+            22,
+            2,
+            39
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            1,
+            2,
+            0,
+            6
+          ],
+          "spanList": [
+            22,
+            2,
+            24
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            1,
+            2,
+            0,
+            1
+          ],
+          "spanList": [
+            22,
+            25,
+            34
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            1,
+            2,
+            0,
+            3
+          ],
+          "spanList": [
+            22,
+            37,
+            38
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            1,
+            2,
+            1
+          ],
+          "spanList": [
+            23,
+            2,
+            39
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            1,
+            2,
+            1,
+            6
+          ],
+          "spanList": [
+            23,
+            2,
+            23
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            1,
+            2,
+            1,
+            1
+          ],
+          "spanList": [
+            23,
+            24,
+            34
+          ],
+          "leadingDetachedCommentsList": []
+        },
+        {
+          "pathList": [
+            4,
+            1,
+            2,
+            1,
+            3
+          ],
+          "spanList": [
+            23,
+            37,
+            38
+          ],
+          "leadingDetachedCommentsList": []
         }
       ]
     },
@@ -796,7 +968,23 @@
               "reservedNameList": []
             }
           ],
-          "enumTypeList": [],
+          "enumTypeList": [
+            {
+              "name": "NestedEnum",
+              "valueList": [
+                {
+                  "name": "a",
+                  "number": 0
+                },
+                {
+                  "name": "b",
+                  "number": 1
+                }
+              ],
+              "reservedRangeList": [],
+              "reservedNameList": []
+            }
+          ],
           "extensionRangeList": [],
           "oneofDeclList": [],
           "reservedRangeList": [
@@ -817,9 +1005,53 @@
             "foo",
             "bar"
           ]
+        },
+        {
+          "name": "InternalNestedUserProto",
+          "fieldList": [
+            {
+              "name": "nestedMsg",
+              "number": 1,
+              "label": 1,
+              "type": 11,
+              "typeName": ".basic.SkillProto.NestedProto",
+              "jsonName": "nestedMsg"
+            },
+            {
+              "name": "nestedEnum",
+              "number": 2,
+              "label": 1,
+              "type": 14,
+              "typeName": ".basic.SkillProto.NestedEnum",
+              "jsonName": "nestedEnum"
+            }
+          ],
+          "extensionList": [],
+          "nestedTypeList": [],
+          "enumTypeList": [],
+          "extensionRangeList": [],
+          "oneofDeclList": [],
+          "reservedRangeList": [],
+          "reservedNameList": []
         }
       ],
-      "enumTypeList": [],
+      "enumTypeList": [
+        {
+          "name": "RootEnum",
+          "valueList": [
+            {
+              "name": "a",
+              "number": 0
+            },
+            {
+              "name": "b",
+              "number": 1
+            }
+          ],
+          "reservedRangeList": [],
+          "reservedNameList": []
+        }
+      ],
       "serviceList": [],
       "extensionList": [],
       "sourceCodeInfo": {
@@ -829,7 +1061,7 @@
             "spanList": [
               0,
               0,
-              15,
+              30,
               1
             ],
             "leadingDetachedCommentsList": []
@@ -864,7 +1096,7 @@
             "spanList": [
               4,
               0,
-              15,
+              20,
               1
             ],
             "leadingDetachedCommentsList": []
@@ -1408,6 +1640,394 @@
               15
             ],
             "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              4,
+              0
+            ],
+            "spanList": [
+              16,
+              2,
+              19,
+              3
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              4,
+              0,
+              1
+            ],
+            "spanList": [
+              16,
+              7,
+              17
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              4,
+              0,
+              2,
+              0
+            ],
+            "spanList": [
+              17,
+              4,
+              10
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              4,
+              0,
+              2,
+              0,
+              1
+            ],
+            "spanList": [
+              17,
+              4,
+              5
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              4,
+              0,
+              2,
+              0,
+              2
+            ],
+            "spanList": [
+              17,
+              8,
+              9
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              4,
+              0,
+              2,
+              1
+            ],
+            "spanList": [
+              18,
+              4,
+              10
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              4,
+              0,
+              2,
+              1,
+              1
+            ],
+            "spanList": [
+              18,
+              4,
+              5
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              0,
+              4,
+              0,
+              2,
+              1,
+              2
+            ],
+            "spanList": [
+              18,
+              8,
+              9
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              5,
+              0
+            ],
+            "spanList": [
+              22,
+              0,
+              25,
+              1
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              5,
+              0,
+              1
+            ],
+            "spanList": [
+              22,
+              5,
+              13
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              5,
+              0,
+              2,
+              0
+            ],
+            "spanList": [
+              23,
+              2,
+              8
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              5,
+              0,
+              2,
+              0,
+              1
+            ],
+            "spanList": [
+              23,
+              2,
+              3
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              5,
+              0,
+              2,
+              0,
+              2
+            ],
+            "spanList": [
+              23,
+              6,
+              7
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              5,
+              0,
+              2,
+              1
+            ],
+            "spanList": [
+              24,
+              2,
+              8
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              5,
+              0,
+              2,
+              1,
+              1
+            ],
+            "spanList": [
+              24,
+              2,
+              3
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              5,
+              0,
+              2,
+              1,
+              2
+            ],
+            "spanList": [
+              24,
+              6,
+              7
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1
+            ],
+            "spanList": [
+              27,
+              0,
+              30,
+              1
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              1
+            ],
+            "spanList": [
+              27,
+              8,
+              31
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              2,
+              0
+            ],
+            "spanList": [
+              28,
+              2,
+              39
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              2,
+              0,
+              6
+            ],
+            "spanList": [
+              28,
+              2,
+              24
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              2,
+              0,
+              1
+            ],
+            "spanList": [
+              28,
+              25,
+              34
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              2,
+              0,
+              3
+            ],
+            "spanList": [
+              28,
+              37,
+              38
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              2,
+              1
+            ],
+            "spanList": [
+              29,
+              2,
+              39
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              2,
+              1,
+              6
+            ],
+            "spanList": [
+              29,
+              2,
+              23
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              2,
+              1,
+              1
+            ],
+            "spanList": [
+              29,
+              24,
+              34
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              2,
+              1,
+              3
+            ],
+            "spanList": [
+              29,
+              37,
+              38
+            ],
+            "leadingDetachedCommentsList": []
           }
         ]
       },
@@ -1500,6 +2120,34 @@
           "oneofDeclList": [],
           "reservedRangeList": [],
           "reservedNameList": []
+        },
+        {
+          "name": "ExternalNestedUserProto",
+          "fieldList": [
+            {
+              "name": "nestedMsg",
+              "number": 1,
+              "label": 1,
+              "type": 11,
+              "typeName": ".basic.SkillProto.NestedProto",
+              "jsonName": "nestedMsg"
+            },
+            {
+              "name": "nestedEnum",
+              "number": 2,
+              "label": 1,
+              "type": 14,
+              "typeName": ".basic.SkillProto.NestedEnum",
+              "jsonName": "nestedEnum"
+            }
+          ],
+          "extensionList": [],
+          "nestedTypeList": [],
+          "enumTypeList": [],
+          "extensionRangeList": [],
+          "oneofDeclList": [],
+          "reservedRangeList": [],
+          "reservedNameList": []
         }
       ],
       "enumTypeList": [],
@@ -1512,7 +2160,7 @@
             "spanList": [
               0,
               0,
-              19,
+              24,
               1
             ],
             "leadingDetachedCommentsList": []
@@ -2132,6 +2780,150 @@
               17,
               13,
               14
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1
+            ],
+            "spanList": [
+              21,
+              0,
+              24,
+              1
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              1
+            ],
+            "spanList": [
+              21,
+              8,
+              31
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              2,
+              0
+            ],
+            "spanList": [
+              22,
+              2,
+              39
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              2,
+              0,
+              6
+            ],
+            "spanList": [
+              22,
+              2,
+              24
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              2,
+              0,
+              1
+            ],
+            "spanList": [
+              22,
+              25,
+              34
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              2,
+              0,
+              3
+            ],
+            "spanList": [
+              22,
+              37,
+              38
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              2,
+              1
+            ],
+            "spanList": [
+              23,
+              2,
+              39
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              2,
+              1,
+              6
+            ],
+            "spanList": [
+              23,
+              2,
+              23
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              2,
+              1,
+              1
+            ],
+            "spanList": [
+              23,
+              24,
+              34
+            ],
+            "leadingDetachedCommentsList": []
+          },
+          {
+            "pathList": [
+              4,
+              1,
+              2,
+              1,
+              3
+            ],
+            "spanList": [
+              23,
+              37,
+              38
             ],
             "leadingDetachedCommentsList": []
           }

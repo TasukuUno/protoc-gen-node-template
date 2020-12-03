@@ -12,10 +12,14 @@ message UserProto {
   int64 updatedAt = 5;
   bool isDeleted = 6;
   repeated SkillProto skills = 7;
-  
+
   enum Gender {
     male = 0;
     female = 1;
   }
 }
 
+message ExternalNestedUserProto {
+  SkillProto.NestedProto nestedMsg = 1;
+  SkillProto.NestedEnum nestedEnum = 2;
+}

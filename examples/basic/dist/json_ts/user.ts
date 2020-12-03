@@ -17,3 +17,8 @@ export enum UserProtoGender {
   female = 1,
 }
 
+export interface ExternalNestedUserProto {
+  nestedMsg?: SkillProtoNestedProto;
+  nestedEnum?: SkillProtoNestedEnum;
+}
+

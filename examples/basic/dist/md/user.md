@@ -19,3 +19,11 @@
 | male | 0 |
 | female | 1 |
 
+## ExternalNestedUserProto
+
+| label | name | type | number |
+| ----- | ---- | ---- | ------ |
+| optional | nestedMsg | NestedProto | 1 |
+| optional | nestedEnum | NestedEnum | 2 |
+
+

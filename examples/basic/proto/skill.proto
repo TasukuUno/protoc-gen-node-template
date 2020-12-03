@@ -13,4 +13,19 @@ message SkillProto {
     string a = 1;
     int64 b = 2;
   }
+
+  enum NestedEnum {
+    a = 0;
+    b = 1;
+  }
+}
+
+enum RootEnum {
+  a = 0;
+  b = 1;
+}
+
+message InternalNestedUserProto {
+  SkillProto.NestedProto nestedMsg = 1;
+  SkillProto.NestedEnum nestedEnum = 2;
 }
