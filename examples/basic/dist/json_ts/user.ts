@@ -1,5 +1,7 @@
 import {
   SkillProto,
+  SkillProtoNestedProto,
+  SkillProtoNestedEnum,
 } from './skill';
 
 export interface UserProto {
@@ -15,5 +17,10 @@ export interface UserProto {
 export enum UserProtoGender {
   male = 0,
   female = 1,
+}
+
+export interface ExternalNestedUserProto {
+  nestedMsg?: SkillProtoNestedProto;
+  nestedEnum?: SkillProtoNestedEnum;
 }
 

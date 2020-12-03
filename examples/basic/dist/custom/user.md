@@ -10,3 +10,6 @@ HELLO
   5. updatedAt
   6. isDeleted
   7. skills
+- ExternalNestedUserProto
+  1. nestedMsg
+  2. nestedEnum
