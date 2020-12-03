@@ -1,6 +1,6 @@
 {
   "name": "protoc-gen-node-template",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Protoc plugin to generate files by your own templates",
   "main": "index.js",
   "scripts": {
