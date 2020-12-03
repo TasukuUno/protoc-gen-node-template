@@ -1,7 +1,10 @@
+<%
+  var protoPrefix = '.' + proto.pb_package;
+_%>
 <% if (!_.isEmpty(typeNames)) { _%>
 import {
 <% _.forEach(typeNames, (typeName) => {_%>
-  <%-typeName.split('.').pop() %>,
+  <%-typeName.replace(protoPrefix, '').split('.').join('') %>,
 <% });_%>
 } from './<%-fileName.replace(/\.proto$/, "") %>';
 

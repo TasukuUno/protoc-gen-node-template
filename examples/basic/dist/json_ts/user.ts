@@ -1,7 +1,7 @@
 import {
   SkillProto,
-  NestedProto,
-  NestedEnum,
+  SkillProtoNestedProto,
+  SkillProtoNestedEnum,
 } from './skill';
 
 export interface UserProto {
