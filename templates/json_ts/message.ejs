@@ -12,10 +12,9 @@
   name = prefix + name;
 
   var protoPrefix = '.' + proto.pb_package;
-  var exp = prefix ? '' : 'export ';
 _%>
 <% if (!_.isEmpty(fieldList)) { _%>
-<%- exp %>interface <%- name %> {
+export interface <%- name %> {
 <% _.forEach(fieldList, (field) => {_%>
   <%-include('/field', { field, protoPrefix }) _%>
 <% });_%>

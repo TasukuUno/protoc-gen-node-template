@@ -5,10 +5,9 @@
   } = enumType;
 
   name = prefix + name;
-  var exp = prefix ? '' : 'export ';
 _%>
 <% if (!_.isEmpty(valueList)) { _%>
-<%- exp %>enum <%- name %> {
+export enum <%- name %> {
 <% _.forEach(valueList, (value) => {_%>
   <%-value.name %> = <%-value.number %>,
 <% });_%>

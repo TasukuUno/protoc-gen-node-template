@@ -4,7 +4,7 @@ export interface SkillProto {
   nested?: SkillProtoNestedProto;
 }
 
-interface SkillProtoNestedProto {
+export interface SkillProtoNestedProto {
   a?: string;
   b?: number;
 }

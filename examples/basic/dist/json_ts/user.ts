@@ -12,7 +12,7 @@ export interface UserProto {
   skills?: SkillProto[];
 }
 
-enum UserProtoGender {
+export enum UserProtoGender {
   male = 0,
   female = 1,
 }
