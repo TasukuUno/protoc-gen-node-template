@@ -3,7 +3,9 @@
     {
       "fileName": "skill.proto",
       "typeNames": [
-        ".basic.SkillProto"
+        ".basic.SkillProto",
+        ".basic.SkillProto.NestedProto",
+        ".basic.SkillProto.NestedEnum"
       ]
     }
   ],
