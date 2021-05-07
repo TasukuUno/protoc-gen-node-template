@@ -30,7 +30,7 @@
   "dependencies": {
     "ejs": "3.1.5",
     "google-protobuf": "3.13.0",
-    "lodash": "4.17.20",
+    "lodash": "4.17.21",
     "protoc-plugin": "0.0.6"
   },
   "devDependencies": {
